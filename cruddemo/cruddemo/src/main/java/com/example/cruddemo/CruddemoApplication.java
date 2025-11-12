@@ -1,6 +1,7 @@
 package com.example.cruddemo;
 
 import com.example.cruddemo.dao.StudentDAO;
+import com.example.cruddemo.dao.StudentDAOImpl;
 import com.example.cruddemo.entity.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -17,7 +18,7 @@ public class CruddemoApplication {
 	}
 
     @Bean
-    public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
+    public CommandLineRunner commandLineRunner(StudentDAO studentDAO, StudentDAOImpl studentDAOImpl) {
         return runner->{
             //createStudent(studentDAO);
 
@@ -25,8 +26,17 @@ public class CruddemoApplication {
 
             //readStudent(studentDAO);
 
-            queryForStudent(studentDAO);
+            //queryForStudent(studentDAO);
+
+            queryForStudentByLastName(studentDAO);
         };
+    }
+
+    private void queryForStudentByLastName(StudentDAO studentDAO) {
+        List<Student> theStudents = studentDAO.findByLastName("Anuradha");
+        for (Student student : theStudents) {
+            System.out.println(student);
+        }
     }
 
     private void queryForStudent(StudentDAO studentDAO) {
