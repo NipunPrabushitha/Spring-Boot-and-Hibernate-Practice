@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo" />
         <module name="Springcoredemo" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -15,6 +16,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Springcoredemo" options="-parameters" />
       <module name="cruddemo" options="-parameters" />
+      <module name="demo" options="-parameters" />
     </option>
   </component>
 </project>
