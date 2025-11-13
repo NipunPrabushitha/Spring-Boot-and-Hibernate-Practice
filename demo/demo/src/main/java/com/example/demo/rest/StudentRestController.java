@@ -38,7 +38,7 @@ public class StudentRestController {
         }
         return students.get(studentId);
     }
-    @ExceptionHandler
+    /*@ExceptionHandler
     public ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException ex){
         StudentErrorResponse error = new StudentErrorResponse();
 
@@ -58,6 +58,6 @@ public class StudentRestController {
         error.setTimestamp(System.currentTimeMillis());
 
         return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST  );
-    }
+    }*/
 
 }
