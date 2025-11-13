@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo" />
         <module name="restCrudDemo" />
+        <module name="restCrudDemo (1)" />
         <module name="Springcoredemo" />
         <module name="demo" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="cruddemo" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="restCrudDemo" options="-parameters" />
+      <module name="restCrudDemo (1)" options="-parameters" />
     </option>
   </component>
 </project>

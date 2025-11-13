@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/Springcoredemo/Springcoredemo/pom.xml" />
         <option value="$PROJECT_DIR$/demo/demo/pom.xml" />
         <option value="$PROJECT_DIR$/restCrudDemo/restCrudDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/restCrudDemoWithJPA/restCrudDemo/pom.xml" />
       </list>
     </option>
   </component>

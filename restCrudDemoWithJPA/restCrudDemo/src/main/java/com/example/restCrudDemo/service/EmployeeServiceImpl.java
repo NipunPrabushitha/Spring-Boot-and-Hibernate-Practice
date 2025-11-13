@@ -1,39 +1,48 @@
 package com.example.restCrudDemo.service;
 
-import com.example.restCrudDemo.dao.EmployeeDAO;
+import com.example.restCrudDemo.dao.EmployeeRepository;
 import com.example.restCrudDemo.entity.Employee;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
-    private EmployeeDAO employeeDAO;
+    private EmployeeRepository employeeRepository;
 
-    public EmployeeServiceImpl(EmployeeDAO theEmployeeDAO) {
-        employeeDAO = theEmployeeDAO;
+    public EmployeeServiceImpl(EmployeeRepository theEmployeeDAO) {
+        employeeRepository = theEmployeeDAO;
     }
     @Override
     public List<Employee> findAll() {
-        return employeeDAO.findAll();
+        return employeeRepository.findAll();
     }
 
     @Override
     public Employee findById(int theId) {
-        return employeeDAO.findById(theId);
+
+        Optional<Employee> result = employeeRepository.findById(theId);
+        Employee employee = null;
+        if (result.isPresent()) {
+            employee = result.get();
+        }else{
+            throw new RuntimeException("Did not find employee with id " + theId);
+        }
+        return employee;
     }
 
-    @Transactional
+
     @Override
     public Employee save(Employee employee) {
-       return employeeDAO.save(employee);
+       return employeeRepository.save(employee);
     }
 
-    @Transactional
+
     @Override
     public void deleteById(int theId) {
-        employeeDAO.deleteById(theId);
+        employeeRepository.deleteById(theId);
     }
 }
