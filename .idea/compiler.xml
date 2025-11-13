@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cruddemo" />
+        <module name="thymeleafdemo" />
         <module name="restCrudDemo" />
         <module name="Springcoredemo" />
         <module name="restCrudDemo (3)" />
@@ -25,6 +26,7 @@
       <module name="restCrudDemo (1)" options="-parameters" />
       <module name="restCrudDemo (2)" options="-parameters" />
       <module name="restCrudDemo (3)" options="-parameters" />
+      <module name="thymeleafdemo" options="-parameters" />
     </option>
   </component>
 </project>
