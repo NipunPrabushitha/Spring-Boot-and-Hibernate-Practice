@@ -2,6 +2,7 @@ package com.example.restCrudDemo.service;
 
 import com.example.restCrudDemo.dao.EmployeeDAO;
 import com.example.restCrudDemo.entity.Employee;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +21,19 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public Employee findById(Integer id) {
-        return null;
+    public Employee findById(int theId) {
+        return employeeDAO.findById(theId);
+    }
+
+    @Transactional
+    @Override
+    public Employee save(Employee employee) {
+       return employeeDAO.save(employee);
+    }
+
+    @Transactional
+    @Override
+    public void deleteById(int theId) {
+        employeeDAO.deleteById(theId);
     }
 }
