@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/restCrudDemo/restCrudDemo/pom.xml" />
         <option value="$PROJECT_DIR$/restCrudDemoWithJPA/restCrudDemo/pom.xml" />
         <option value="$PROJECT_DIR$/restCrudDemoWithSpringDataRest/restCrudDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringSecurity/restCrudDemo/pom.xml" />
       </list>
     </option>
   </component>
