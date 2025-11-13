@@ -11,6 +11,7 @@
         <module name="restCrudDemo (1)" />
         <module name="Springcoredemo" />
         <module name="demo" />
+        <module name="restCrudDemo (2)" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +22,7 @@
       <module name="demo" options="-parameters" />
       <module name="restCrudDemo" options="-parameters" />
       <module name="restCrudDemo (1)" options="-parameters" />
+      <module name="restCrudDemo (2)" options="-parameters" />
     </option>
   </component>
 </project>
