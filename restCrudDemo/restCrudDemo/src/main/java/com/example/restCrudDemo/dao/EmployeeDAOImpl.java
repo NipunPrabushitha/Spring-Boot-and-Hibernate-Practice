@@ -26,4 +26,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         List<Employee> employees = theQuery.getResultList();
         return employees;
     }
+
+    @Override
+    public Employee findById(Integer id) {
+
+    }
 }
