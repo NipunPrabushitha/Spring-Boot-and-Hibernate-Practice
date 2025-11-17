@@ -6,14 +6,34 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cruddemo" />
-        <module name="thymeleafdemo" />
-        <module name="restCrudDemo" />
+        <module name="demosecurity (6)" />
+        <module name="thymeleafdemo (1) (com.luv2code.springboot)" />
+        <module name="cruddemo (1) (com.luv2code.springboot)" />
+        <module name="demosecurity" />
+        <module name="demosecurity (8)" />
         <module name="Springcoredemo" />
-        <module name="restCrudDemo (3)" />
-        <module name="restCrudDemo (1)" />
         <module name="demo" />
         <module name="restCrudDemo (2)" />
+        <module name="cruddemo" />
+        <module name="thymeleafdemo" />
+        <module name="demosecurity (11)" />
+        <module name="thymeleafdemo (3) (com.luv2code.springboot)" />
+        <module name="demosecurity (1)" />
+        <module name="demosecurity (3)" />
+        <module name="restCrudDemo" />
+        <module name="demosecurity (5)" />
+        <module name="demosecurity (7)" />
+        <module name="demosecurity (9)" />
+        <module name="restCrudDemo (3)" />
+        <module name="thymeleafdemo (4) (com.luv2code.springboot)" />
+        <module name="restCrudDemo (1)" />
+        <module name="thymeleafdemo (2) (com.luv2code.springboot)" />
+        <module name="demosecurity (12)" />
+        <module name="cruddemo (2) (com.luv2code.springboot)" />
+        <module name="demosecurity (10)" />
+        <module name="thymeleafdemo (5) (com.luv2code.springboot)" />
+        <module name="demosecurity (2)" />
+        <module name="demosecurity (4)" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,12 +41,32 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Springcoredemo" options="-parameters" />
       <module name="cruddemo" options="-parameters" />
+      <module name="cruddemo (1) (com.luv2code.springboot)" options="-parameters" />
+      <module name="cruddemo (2) (com.luv2code.springboot)" options="-parameters" />
       <module name="demo" options="-parameters" />
+      <module name="demosecurity" options="-parameters" />
+      <module name="demosecurity (1)" options="-parameters" />
+      <module name="demosecurity (10)" options="-parameters" />
+      <module name="demosecurity (11)" options="-parameters" />
+      <module name="demosecurity (12)" options="-parameters" />
+      <module name="demosecurity (2)" options="-parameters" />
+      <module name="demosecurity (3)" options="-parameters" />
+      <module name="demosecurity (4)" options="-parameters" />
+      <module name="demosecurity (5)" options="-parameters" />
+      <module name="demosecurity (6)" options="-parameters" />
+      <module name="demosecurity (7)" options="-parameters" />
+      <module name="demosecurity (8)" options="-parameters" />
+      <module name="demosecurity (9)" options="-parameters" />
       <module name="restCrudDemo" options="-parameters" />
       <module name="restCrudDemo (1)" options="-parameters" />
       <module name="restCrudDemo (2)" options="-parameters" />
       <module name="restCrudDemo (3)" options="-parameters" />
       <module name="thymeleafdemo" options="-parameters" />
+      <module name="thymeleafdemo (1) (com.luv2code.springboot)" options="-parameters" />
+      <module name="thymeleafdemo (2) (com.luv2code.springboot)" options="-parameters" />
+      <module name="thymeleafdemo (3) (com.luv2code.springboot)" options="-parameters" />
+      <module name="thymeleafdemo (4) (com.luv2code.springboot)" options="-parameters" />
+      <module name="thymeleafdemo (5) (com.luv2code.springboot)" options="-parameters" />
     </option>
   </component>
 </project>
